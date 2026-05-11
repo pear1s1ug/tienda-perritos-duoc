@@ -14,3 +14,4 @@ INSERT INTO productos (nombre, descripcion, precio, stock) VALUES
 ('Alimento Adulto Light', 'Control de peso, razas medianas', 17990, 8),
 ('Snacks Dentales', 'Ayuda a la limpieza dental', 5990, 30);
 ('Snack Premium', 'Sabor Vacuno', 8990, 20);
+('Churus gato ninja', 'Todos los sabores', 60000, 100);
