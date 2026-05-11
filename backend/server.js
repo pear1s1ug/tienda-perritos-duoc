@@ -18,6 +18,8 @@ app.use(express.json());
 
 let pool;
 
+
+//v2
 // Inicializar pool de conexiones
 async function initDb() {
   try {
