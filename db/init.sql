@@ -16,4 +16,4 @@ INSERT INTO productos (nombre, descripcion, precio, stock) VALUES
 ('Snack Premium', 'Sabor Vacuno', 8990, 20),
 ('Churus gato ninja', 'Todos los sabores', 60000, 100);
 
--- hola
+-- hola hola
