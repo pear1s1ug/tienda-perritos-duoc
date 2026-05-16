@@ -34,25 +34,25 @@ Dentro de cada subnet, hay una instancia EC2 para levantar el backend, frontend 
  
 ## Estructura de carpetas de la aplicación (/home/ec2-user/ de cada instancia)
 - frontend/ (FRONT-EC2)
-   Dockerfile
-   index.html
-   app.js
-   default.conf
+   * Dockerfile
+   * index.html
+   * app.js
+   * default.conf
 
 - backend/ (BACKEND-EC2)
-   Dockerfile
-   server.js
-   package.json
+   * Dockerfile
+   * server.js
+   * package.json
 
 - db/ (DB-EC2)
-   Dockerfile
-   init.sql
+   * Dockerfile
+   * init.sql
 
 Config de pipelines en repositorio:
 - .github/workflows/
-    cicd-tienda-frontend.yml
-    cicd-tienda-backend.yml
-    cicd-tienda-db.yml
+    * cicd-tienda-frontend.yml
+    * cicd-tienda-backend.yml
+    * cicd-tienda-db.yml
      
 ## Verificar antes de correr
 - default.conf del frontend debe a puntar a la IP privada actual de BACKEND-EC2.
