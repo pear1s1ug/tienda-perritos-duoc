@@ -116,13 +116,29 @@ https://hub.docker.com/repositories/pear1s1ug
 ## Comandos útiles Linux AMI
 - Ver contenedores corriendo
   * docker ps
-- Ver imágenes existentes
-  * docker images
+
+- Ver todos los contenedores (incluye detenidos)
+  * docker ps -a
     
+- Ver imágenes existentes localmente
+  * docker images
+ 
 - Ver logs de un contenedor
   * docker logs tienda-backend
   * docker logs tienda-frontend
   * docker logs tienda-db
+
+- Iniciar un contenedor existente
+  * docker start tienda-<capa>
+
+ - Detener un contenedor
+   * docker stop tienda-<capa>
+
+ - Eliminar un contenedor
+   * docker rm tienda-<capa>
+ 
+- Entrar a un contenedor interactivamente
+  * docker exec -it tienda-<capa> sh
     
 - Verificar productos existentes en la db (en su EC2)
   * docker exec -it tienda-db mysql -u root -p<DB_PASSWORD> -e "USE tienda_perritos; SELECT * FROM productos;"
